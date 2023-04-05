@@ -1,0 +1,12 @@
+* {
+    /*universal*/
+    font-family: "Lucida Console", 'Courier New', Courier, monospace
+}
+
+/* !! Criteria 6 !! 
+    resize to screen; flexbox?
+    need sizes for
+    - desktop
+    - tablet
+    - phone
+*/
