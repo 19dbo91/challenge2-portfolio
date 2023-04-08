@@ -1,7 +1,8 @@
 :root{
-    --screen-bigger: 480px;
-    --screen-biggest: 768px;
-}
+    --title: "DEV // GAMER";
+    --fullname: "Dustin Bonilla";
+    --pronouns: "(he/him)";
+}   
 
 html {
     scroll-behavior: smooth;
@@ -11,22 +12,26 @@ html {
  .profile{
  }
 
-#titles {
+ #titles{
+    margin: 0px;
+ }
+ #titles::after{
+    content: var(--title);
+}
+#name{
     margin: 0px;
 }
-
-#name {
-    margin: 0px;
+#name::after {
+    content: var(--fullname);
 }
-
 #pronouns{
     margin:0px;
     color: gray;
 }
-
-#banner {
-    background-image: url("../images/placeholder-banner.jpg");
+#pronouns::after{
+    content: var(--pronouns);
 }
+
 
 nav {
     display: flex;
@@ -38,6 +43,19 @@ nav ul{
 
 nav ul li{
 
+}
+
+figure{
+    margin: 0px;
+    padding: 0px;
+}
+#banner {
+    /*background-image: url("../images/placeholder-banner.jpg");*/
+    display: block;
+    max-width: 100%;
+    margin: 10;
+    padding: 0px;
+    flex: 0 0 500px;
 }
 
 
