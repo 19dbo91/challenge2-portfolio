@@ -1,7 +1,41 @@
-* {
-    /*universal*/
-    font-family: "Lucida Console", 'Courier New', Courier, monospace
+html {
+    scroll-behavior: smooth;
+    font-family: "lucida console",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+ .profile{
+ }
+
+#titles {
+    margin: 0px;
+}
+
+#name {
+    margin: 0px;
+}
+
+#pronouns{
+    margin:0px;
+    color: gray;
+}
+
+#banner {
+    background-image: url("../images/placeholder-banner.jpg");
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    justify-content: flex-end;
+}
+
+nav ul li{
+
+}
+
+
 
 /* !! Criteria 6 !! 
     resize to screen; flexbox?
