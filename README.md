@@ -2,20 +2,17 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The objective of this project is to showcase my portfolio of work, completed and upcoming. The website serves as a directory of the sites and how to reach me.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+None.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+- Open up a browser of your choosing.
+- Enter into the address bar this url:
+- Click on the images to visit a webpage in a new tab.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
@@ -24,6 +21,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 
 Me
+
+References Sites:
+- (coming soon)
 
 ## Features
 

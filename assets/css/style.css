@@ -1,3 +1,8 @@
+:root{
+    --screen-bigger: 480px;
+    --screen-biggest: 768px;
+}
+
 html {
     scroll-behavior: smooth;
     font-family: "lucida console",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -43,4 +48,23 @@ nav ul li{
     - desktop
     - tablet
     - phone
-*/
+
+
+/*Layout for */
+@media screen and (min-width: 480px){
+    /*TODO: set */
+    /*TODO: remove after previous TODO done*/
+    
+    body{
+        background-color:blue;
+    }
+}
+
+@media screen and (min-width:768px ){
+    /*TODO: set wide layout*/
+    /*TODO: remove after previous TODO done*/
+    body{
+        background-color: rebeccapurple;
+    }
+}
+
