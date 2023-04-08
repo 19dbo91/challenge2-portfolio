@@ -2,11 +2,23 @@
     --title: "DEV // GAMER";
     --fullname: "Dustin Bonilla";
     --pronouns: "(he/him)";
+    --main-color: gray;
+    --complement-color:black;
+
 }   
 
 html {
     scroll-behavior: smooth;
     font-family: "lucida console",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+main{
+    margin:0px;
+    padding: 0px;
 }
 
  .profile{
@@ -32,7 +44,7 @@ html {
     content: var(--pronouns);
 }
 
-
+/* Navigation Bar */
 nav {
     display: flex;
     flex-direction: column;
@@ -45,6 +57,8 @@ nav ul li{
 
 }
 
+
+/*Banner*/
 figure{
     margin: 0px;
     padding: 0px;
@@ -53,22 +67,16 @@ figure{
     /*background-image: url("../images/placeholder-banner.jpg");*/
     display: block;
     max-width: 100%;
-    margin: 10;
+    margin: 0px;
     padding: 0px;
     flex: 0 0 500px;
 }
 
+/*About*/
+/*TODO: Aabout*/
 
-
-/* !! Criteria 6 !! 
-    resize to screen; flexbox?
-    need sizes for
-    - desktop
-    - tablet
-    - phone
-
-
-/*Layout for */
+/*Layouts for Devices*/
+/*Tablets*/
 @media screen and (min-width: 480px){
     /*TODO: set */
     /*TODO: remove after previous TODO done*/
@@ -78,6 +86,7 @@ figure{
     }
 }
 
+/*Desktop*/
 @media screen and (min-width:768px ){
     /*TODO: set wide layout*/
     /*TODO: remove after previous TODO done*/
