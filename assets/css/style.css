@@ -70,6 +70,7 @@ figure{
     /*background-image: url("../images/placeholder-banner.jpg");*/
     display: block;
     max-width: 100%;
+    max-height: 700px;
     margin: 0px;
     padding: 0px;
     flex: 0 0 500px;
@@ -85,13 +86,33 @@ figure{
 }
 .card{
     flex: 0 0 100%;
-    border: 1px black;
+    border: 1px solid black;
+    
     border-radius: 10px;
 }
-.featured{
-    flex: 1 0 100%;
+
+.card a{
+    display: flex;
+
+    height: 300px;
+    width: 500px;
+    border: 12px solid white;
+    box-shadow: 10px 10px 35px 2px rgb(73, 73, 73);
+
+    margin:40px
 }
-.upcoming{}
+
+.featured a{
+    height: 70%;
+    width: 70%;
+    max-width: 700px;
+}
+
+.upcoming a{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
 
 
 
@@ -112,14 +133,14 @@ figure{
 /*Desktop*/
 @media screen and (min-width:768px ){
     .card{
-        flex: 0 0 33.333%;
+        flex: 0 0 33%;
     }
     .featured{
         flex: 1 0 100%;
     }
     
     body{
-        background-color: rebeccapurple;
+        background-color: rgb(92, 255, 214);
     }
 }
 
