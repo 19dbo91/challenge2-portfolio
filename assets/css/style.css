@@ -2,7 +2,7 @@
     --title: "DEV // GAMER";
     --fullname: "Dustin Bonilla";
     --pronouns: "(he/him)";
-    --main-color: gray;
+    --main-color: rgb(187, 187, 187);
     --complement-color:black;
 
     /*Icon*/
@@ -18,7 +18,26 @@ html {
 body{
     margin:10px;
     padding: 0px 0px 50px 0px ;
-    background-color: rgb(212, 197, 177);
+    background-color: var(--main-color);
+}
+
+h2{
+    margin: 75px auto auto auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.div-line{
+    border: 1px ridge grey;
+    margin: 10px;
+    min-width: 50%;
+    max-width: 300px;
+
 }
 
 /*Top*/
@@ -26,10 +45,11 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    border: 12px solid blueviolet;
 }
 
-.profile{
- }
+.profile{}
 
  #titles{
     margin: 0px;
@@ -45,7 +65,7 @@ header{
 }
 #pronouns{
     margin:0px;
-    color: gray;
+    color: brown;
 }
 #pronouns::after{
     content: var(--pronouns);
@@ -57,8 +77,15 @@ nav {
 
 nav ul li{
     list-style: none;
-
+    
 }
+nav ul li:hover{   
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 10px var(--icon-outline);
+}
+
+
+
 
 main{
     margin:0px;
@@ -82,19 +109,18 @@ figure{
 }
 
 /*Section: About*/
-
-.about p{
-    line-height: 14px;
+#bio {
+    border: 5px inset;
 }
 
 /*Section: Work*/
+
 .collection{
     display: flex;
     flex-wrap: wrap;
 }
 .card{
     flex: 0 1 100%;
-    /*border: 1px solid black; un-comment to assist designing*/
 }
 
 .card a{
@@ -129,12 +155,6 @@ figure{
     align-items: center;
 }
 
-#contact h2{
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    border: 12px solid blueviolet;
-}
 
 
 #container-icon{
@@ -159,10 +179,22 @@ figure{
     text-decoration: none;
 }
 
-.icon a:hover{
+.icon a:hover > p{
     text-decoration: none;
-    
+    box-shadow: 0px 0px 10px 10px var(--icon-outline);    
 }
+
+.icon a:active > p{
+    text-decoration: none;
+    border: 2px inset var(--icon-outline);
+    scale: 95%;
+}
+
+.icon a:focus > p{
+    text-decoration: none;
+    box-shadow: 0px 0px 10px 10px var(--icon-outline);    
+}
+
 .icon a figcaption{
     margin: 0px;
     padding: 0px;
@@ -173,7 +205,7 @@ figure{
     background-color: var(--icon-color);
     height: var(--icon-size);
     width: var(--icon-size);
-    border: 1px solid var(--icon-outline);
+    border: 2px groove var(--icon-outline);
     border-radius: 50px;
     font-size: 60px;
     color: white;
@@ -182,16 +214,6 @@ figure{
     align-items: center;
 }
 
-.icon a:hover::before{
-    content: attr(data-hover);
-}
-
-.icon a:focus::after{
-    content: attr(data-hover);    
-}
-.icon a:active::after{
-    content: attr(data-hover);
-}
 
 /*Layouts for Devices*/
 /*Tablets*/
