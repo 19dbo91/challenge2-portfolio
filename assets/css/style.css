@@ -1,5 +1,5 @@
 :root{
-    --title: "DEV // GAMER";
+    --title: "AMATEUR DEV / / GAMER";
     --fullname: "Dustin Bonilla";
     --pronouns: "(he/him)";
     --main-color: rgb(187, 187, 187);
@@ -32,25 +32,19 @@ h2{
 }
 
 
-.div-line{
+.div-line{ /*keep contained in h2*/
     border: 1px ridge grey;
     margin: 10px;
     min-width: 50%;
     max-width: 300px;
-
 }
 
 /*Top*/
 header{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    border: 12px solid blueviolet;
+    justify-content: space-evenly;
 }
-
-.profile{}
-
  #titles{
     margin: 0px;
  }
@@ -65,16 +59,14 @@ header{
 }
 #pronouns{
     margin:0px;
-    color: brown;
+    color: blue;
+    font-size: 10pt;
 }
 #pronouns::after{
     content: var(--pronouns);
 }
 
 /* Navigation Bar */
-nav {
-}
-
 nav ul li{
     list-style: none;
     
@@ -85,7 +77,9 @@ nav ul li:hover{
 }
 
 
-
+/*Banner*/
+#banner {
+}
 
 main{
     margin:0px;
@@ -93,20 +87,7 @@ main{
 }
 
 
-/*Banner*/
-figure{
-    margin: 0px;
-    padding: 0px;
-}
-#banner {
-    /*background-image: url("../images/placeholder-banner.jpg");*/
-    display: block;
-    max-width: 100%;
-    max-height: 700px;
-    margin: 0px;
-    padding: 0px;
-    flex: 0 0 500px;
-}
+
 
 /*Section: About*/
 #bio {
@@ -117,8 +98,32 @@ figure{
 
 .collection{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
+.card{
+    border: inset 12px white;
+    box-shadow: inset 10px 10px 10px 10px grey;
+
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+    flex: 1 0 300px;
+}
+.collection > .card:first-child{
+
+    
+}
+
+.card a{
+    flex: 1 0 300px;
+
+}
+
+
+/* rework is above
 .card{
     flex: 0 1 100%;
 }
@@ -145,7 +150,7 @@ figure{
     justify-content: center;
     background-color: white;
 }
-
+*/
 
 /*Contact*/
 #contact{
@@ -165,6 +170,8 @@ figure{
     justify-content: center;
 }
 .icon{
+    margin: 0px;
+    padding: 0px;
     height: 200px;
     
 }
