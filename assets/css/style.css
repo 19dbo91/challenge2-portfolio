@@ -4,11 +4,13 @@
     --pronouns: "(he/him)";
     --main-color: rgb(187, 187, 187);
     --complement-color:black;
-
+    /*Card*/
+    --title-color: gold;
     /*Icon*/
     --icon-color:rgb(24, 24, 87);
     --icon-outline:rgb(73, 73, 162);
     --icon-size: 65px; /*keep on ht & wdth to keep circle*/
+    --txt-upcoming:"UPCOMING PROJECT"
 }   
 
 html {
@@ -30,7 +32,6 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-
 
 .div-line{ /*keep contained in h2*/
     border: 1px ridge grey;
@@ -76,7 +77,6 @@ nav ul li:hover{
     box-shadow: 0px 0px 10px 10px var(--icon-outline);
 }
 
-
 /*Banner*/
 #banner {
 }
@@ -86,71 +86,61 @@ main{
     padding: 0px;
 }
 
-
-
-
 /*Section: About*/
+
+.container-bio{
+    display: flex;
+    border:10px dotted red;
+    justify-content: center;
+    align-items: center;
+}
 #bio {
+    margin:0px;
     border: 5px inset;
+    max-width: 40%;
+    background-color: antiquewhite;
 }
 
 /*Section: Work*/
 
 .collection{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 .card{
     border: inset 12px white;
     box-shadow: inset 10px 10px 10px 10px grey;
-
+    background-color: white;
     margin: 10px;
-    padding: 50px;
+    padding: 50px 50px 10px;
     display: flex;
-    flex: 1 0 300px;
+    flex-direction: column;
+    align-items: center;
+}
+.card span{
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border: 5px groove var(--title-color);
+    background-color: var(--title-color);
+    color: rgb(162, 126, 28);
+
+
 }
 .collection > .card:first-child{
-
+    flex: 1 0 100%;
+}
+.upcoming span:before{
+    content: "Θ " var(--txt-upcoming) " Θ";
     
 }
 
-.card a{
-    flex: 1 0 300px;
-
+.card a:hover{
+    
 }
 
-
-/* rework is above
-.card{
-    flex: 0 1 100%;
-}
-
-.card a{
-    display: flex;
-    border: 12px solid white;
-    box-shadow: 10px 10px 35px 2px rgb(73, 73, 73);
-
-    margin:40px;
-    padding-bottom: 80px;
-    max-width: 500px;
-}
-
-.featured a{
-    max-width: 700px;
-    margin:40px;
-    padding-bottom: 80px;
-
-}
-
-.upcoming a{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
-*/
 
 /*Contact*/
 #contact{
@@ -160,12 +150,9 @@ main{
     align-items: center;
 }
 
-
-
 #container-icon{
     display: flex;
     flex-flow: row wrap;
-    
     width: 100%;
     justify-content: center;
 }
@@ -173,7 +160,6 @@ main{
     margin: 0px;
     padding: 0px;
     height: 200px;
-    
 }
 .icon a{
     max-width: 100px;
@@ -205,8 +191,6 @@ main{
 .icon a figcaption{
     margin: 0px;
     padding: 0px;
-    
-
 }
 .icon p{
     background-color: var(--icon-color);
@@ -222,24 +206,27 @@ main{
 }
 
 
-/*Layouts for Devices*/
-/*Tablets*/
+/*  Layouts for Devices
+    Targetting Tablets...*/
+
 /* Reenable after dones with mobile design
 
-@media screen and (min-width: 480px){  
+@media screen and (min-width: 768px){  
+    .collection{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
     .card{
         flex: 0 0 50%;
     }
-    .featured{
-        flex: 1 0 100%;
-    }
-    body{
+    body{ /*disable when not fixing
         background-color:rgb(113, 113, 113);
     }
 }
 
 Desktop
-@media screen and (min-width:768px ){
+@media screen and (min-width:1024px ){
     .card{
         flex: 0 0 33%;
     }
@@ -247,7 +234,7 @@ Desktop
         flex: 1 0 100%;
     }
     
-    body{
+    body{ /*disable when not fixing
         background-color: rgb(92, 255, 214);
     }
 }
