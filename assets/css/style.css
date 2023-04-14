@@ -19,12 +19,12 @@ html {
 }
 body{
     margin:10px;
-    padding: 0px 0px 50px 0px ;
+    padding: 10px 0px 50px 0px ;
     background-color: var(--main-color);
 }
 
 h2{
-    margin: 75px auto auto auto;
+    margin: 10px auto auto auto;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -43,12 +43,32 @@ h2{
 /*Top*/
 header{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
     justify-content: space-evenly;
+
+    margin: auto auto 100px;
 }
- #titles{
+header figure{
+    width: 150px;
+    height: 150px;
+    border: 10px groove blue;
+    object-fit: a
+}
+#pic-profile{
+    /* TODO: fix parameters*/
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+#titles{
     margin: 0px;
- }
+}
  #titles::after{
     content: var(--title);
 }
@@ -79,6 +99,7 @@ nav ul li:hover{
 
 /*Banner*/
 #banner {
+    /* TODO: positioned absolute maybe */
 }
 
 main{
@@ -90,15 +111,16 @@ main{
 
 .container-bio{
     display: flex;
-    border:10px dotted red;
     justify-content: center;
     align-items: center;
 }
 #bio {
     margin:0px;
     border: 5px inset;
-    max-width: 40%;
     background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Section: Work*/
@@ -130,6 +152,7 @@ main{
 
 }
 .collection > .card:first-child{
+    width: 1000px;
     flex: 1 0 100%;
 }
 .upcoming span:before{
@@ -209,7 +232,6 @@ main{
 /*  Layouts for Devices
     Targetting Tablets...*/
 
-/* Reenable after dones with mobile design
 
 @media screen and (min-width: 768px){  
     .collection{
@@ -218,25 +240,23 @@ main{
         align-items: center;
     }
     .card{
-        flex: 0 0 50%;
-    }
-    body{ /*disable when not fixing
-        background-color:rgb(113, 113, 113);
-    }
-}
-
-Desktop
-@media screen and (min-width:1024px ){
-    .card{
         flex: 0 0 33%;
     }
-    .featured{
-        flex: 1 0 100%;
-    }
-    
+    /*
     body{ /*disable when not fixing
-        background-color: rgb(92, 255, 214);
-    }
+        background-color:rgb(113, 113, 113);
+    }*/
 }
 
-*/
+/*Desktop*/
+@media screen and (min-width:1024px ){
+    .card{
+        flex: 0 0 12.5%;
+    }
+
+    /*
+    body{ disable when not fixing
+        background-color: rgb(92, 255, 214);
+    }*/
+}
+
