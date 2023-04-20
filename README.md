@@ -15,7 +15,7 @@ None.
 - Click on the images to visit a webpage in a new tab.
 
 
-![Preview of ](assets/images/previews/preview-forREADME.pngassets/images/screenshot.png)
+![Preview of portfolio](/assets/images/previews/preview-forREADME.png)
 
 ## Credits
 
@@ -25,4 +25,6 @@ References Sites:
 
 ## Features
 
+Directory to all other GitHub apps I've created and deployed through GitHub pages.
 
+Links to socials. Phone number removed due to increase in robocalls.
